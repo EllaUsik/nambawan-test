@@ -1,8 +1,71 @@
 @font-face {
 	font-family: 'Raleway';
+	src: url('../fonts/Raleway-ExtraLight.ttf') format('truetype');
+	font-weight: 100;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Raleway';
+	src: url('../fonts/Raleway-ExtraLightItalic.ttf') format('truetype');
+	font-weight: 100;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'Raleway';
+	src: url('../fonts/Raleway-Light.ttf') format('truetype');
+	font-weight: 200;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Raleway';
+	src: url('../fonts/Raleway-LightItalic.ttf') format('truetype');
+	font-weight: 200;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'Raleway';
 	src: url('../fonts/Raleway-Regular.ttf') format('truetype');
 	font-weight: 400;
 	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Raleway';
+	src: url('../fonts/Raleway-Italic.ttf') format('truetype');
+	font-weight: 400;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'Raleway';
+	src: url('../fonts/Raleway-Medium.ttf') format('truetype');
+	font-weight: 500;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Raleway';
+	src: url('../fonts/Raleway-MediumItalic.ttf') format('truetype');
+	font-weight: 500;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'Raleway';
+	src: url('../fonts/Raleway-SemiBold.ttf') format('truetype');
+	font-weight: 600;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Raleway';
+	src: url('../fonts/Raleway-SemiBoldItalic.ttf') format('truetype');
+	font-weight: 600;
+	font-style: italic;
 }
 
 @font-face {
@@ -68,8 +131,9 @@
   text-align: center;
   color: #aaaaaa;
   text-transform: uppercase;
-  font-weight: bold;
-  font-size: 13px;
+  font-family: Raleway;
+  font-weight: ExtraBold;
+  font-size: 11px;
   text-decoration: none;
   padding-top: 30px;
   background-image: url(../images/menu.png);
@@ -98,7 +162,9 @@
   display: block;
   color: #aaaaaa;
   text-transform: uppercase;
-  font-size: 11px;
+  font-family: Raleway;
+  font-weight: Regular;
+  font-size: 12px;
   text-decoration: none;
   height: 20px;
   line-height: 20px;
@@ -124,6 +190,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
+  position: relative;
 }
 
 .content-spase {
@@ -149,15 +216,66 @@ header {
 .phone-nuber {
   font-family: Raleway;
   font-size: 17px;
-  font-weight: bold;
+  font-weight: ExtraBold;
   text-decoration: none;
   color: #ffffff;
 }
 
 .back-call {
   font-family: Raleway;
+  font-weight: SemiBold;
   font-size: 11px;
   text-transform: uppercase;
   color: #d0cfd0;
   padding-top: 10px;
+}
+
+.details-about-us {
+  margin-top: 120px;
+  font-family: Raleway;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 80%;
+}
+
+.greeting {
+  font-weight: ExtraBold;
+  font-size: 21px;
+  color: #10e08b;
+}
+
+.about-us-title {
+  margin: 10px 0;
+  display: block;
+  width: 80%;
+  font-weight: ExtraBold;
+  font-size: 56px;
+  color: white;
+}
+
+.what-we-do {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  font-weight: SemiBold;
+  font-size: 15px;
+  color: white;
+}
+
+.our-service {
+  padding-bottom: 20px;
+  display: block;
+  list-style-type: none;
+  width: 250px;
+  border-bottom: 2px solid #8f918d;
+}
+
+.we-are-cool {
+  width: 270px;
+  height: 60px;
+  background-color: #10e08b;
+  position: absolute;
+  bottom: 0;
+  border: none;
 }
