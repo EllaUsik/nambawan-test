@@ -400,7 +400,7 @@ header {
 .places-of-working {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
   flex-wrap: wrap;
   padding-bottom: 70px;
 }
@@ -458,6 +458,17 @@ header {
   align-items: center;
 }
 
+.how-it-was-bottom-block {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.positioning-center {
+  width: auto;
+  min-width: 544px;
+}
+
 .slogan {
   color: #999999;
   text-align: center;
@@ -465,8 +476,140 @@ header {
   font-size: 32px;
   width: auto;
   max-width: 261px;
+  margin: 0 auto;
 }
 
 .slogan-green {
   color: #10e08b;
+}
+
+.gallery-name {
+  display: block;
+  margin: 20px auto;
+  color: black;
+  text-align: center;
+  font-weight: 400;
+  font-size: 18px;
+  width: auto;
+  max-width: 275px;
+}
+
+.gallery-name-bold-green {
+  color: #10e08b;
+  font-weight: 700;
+}
+
+.thematic-gallery {
+  display: flex;
+  width: auto;
+  max-width: 544px;
+  position: relative;
+}
+
+.left-vertical-block, .right-vertical-block {
+  width: auto;
+  min-width: 40px;
+  background-color: white;
+  position: relative;
+}
+
+.count, .photo-name {
+  height: auto;
+  width: 40px;
+  position: absolute;
+  transform: rotate(-90deg);
+  font-size: 11px;
+  font-weight: 900;
+  color: #999999;
+  text-transform: uppercase;
+}
+.count {
+  left: 0;
+  top: 0;
+}
+
+.photo-name {
+  bottom: 13px;
+  right: 0;
+}
+
+.all-photo-num {
+  font-weight: 400;
+}
+
+.photo {
+  width: 454px;
+  height: 316px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.mountains {
+  background-image: url(../images/firstGalleryPhoto01.png);
+}
+
+.fishes {
+  background-image: url(../images/secondGalleryPhoto02.png);
+}
+
+.next-prev-button-block {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  width: 86px;
+  background-color: white;
+}
+
+.prev-photo, .next-photo {
+  width: 40px;
+  height: 60px;
+  background-color: white;
+  border: none;
+  text-align: center;
+  margin-right: 2px;
+}
+
+.fa-angle-left, .fa-angle-right {
+  color: black;
+  font-size: 11px;
+}
+
+.prev-photo:hover, .next-photo:hover {
+  cursor: pointer;
+  box-shadow: 0 0 2px 2px lightgrey;
+}
+
+.prev-photo:focus, .next-photo:focus {
+  box-shadow: 0 0 2px 2px #10e08b;
+  outline: none;
+}
+
+footer {
+  background-color: #303030;
+  padding: 80px 0 50px;
+}
+
+.about-me {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 12px;
+  font-weight: 900;
+  color: #adadad;
+  text-transform: uppercase;
+}
+
+.name, .time {
+  list-style-type: none;
+}
+
+.my-info {
+  display: block;
+  padding-top: 25px;
+  color: white;
+  font-size: 21px;
+  text-transform: none;
+  font-weight: 200;
 }
