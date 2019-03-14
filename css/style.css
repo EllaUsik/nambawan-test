@@ -96,17 +96,15 @@
 }
 
 .wrapper {
-  /* width: 100vw; */
   height: auto;
   display: flex;
-  max-width: 1400px;
   margin: 0 auto;
+  font-family: Raleway;
 }
 
 .right-block {
   height: auto;
   width: 100%;
-  /* min-width: 1200px; */
 }
 
 .left-block {
@@ -131,8 +129,7 @@
   text-align: center;
   color: #aaaaaa;
   text-transform: uppercase;
-  font-family: Raleway;
-  font-weight: ExtraBold;
+  font-weight: 900;
   font-size: 11px;
   text-decoration: none;
   padding-top: 30px;
@@ -141,6 +138,10 @@
   background-position: top center;
   position: fixed;
   left: 14px;
+}
+
+.menu-link:hover {
+  text-decoration: underline;
 }
 
 .social-networks {
@@ -162,13 +163,16 @@
   display: block;
   color: #aaaaaa;
   text-transform: uppercase;
-  font-family: Raleway;
-  font-weight: Regular;
+  font-weight: 400;
   font-size: 12px;
   text-decoration: none;
   height: 20px;
   line-height: 20px;
   text-align: center;
+}
+
+.social-network-link:hover {
+  text-decoration: underline;
 }
 
 .inst {
@@ -213,17 +217,20 @@ header {
   background-position: center;
 }
 
-.phone-nuber {
-  font-family: Raleway;
+.phone-number {
   font-size: 17px;
-  font-weight: ExtraBold;
+  font-weight: 900;
   text-decoration: none;
   color: #ffffff;
 }
 
+.phone-number:hover {
+  opacity: .7;
+}
+
 .back-call {
-  font-family: Raleway;
-  font-weight: SemiBold;
+
+  font-weight: 600;
   font-size: 11px;
   text-transform: uppercase;
   color: #d0cfd0;
@@ -232,24 +239,24 @@ header {
 
 .details-about-us {
   margin-top: 120px;
-  font-family: Raleway;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 80%;
+  height: auto;
+  min-height: 450px;
 }
 
 .greeting {
-  font-weight: ExtraBold;
+  font-weight: 900;
   font-size: 21px;
   color: #10e08b;
 }
 
 .about-us-title {
-  margin: 10px 0;
+  padding: 30px 0 10px;
   display: block;
   width: 80%;
-  font-weight: ExtraBold;
+  font-weight: 900;
   font-size: 56px;
   color: white;
 }
@@ -258,13 +265,14 @@ header {
   width: 80%;
   display: flex;
   justify-content: space-between;
-  font-weight: SemiBold;
+  font-weight: 600;
   font-size: 15px;
   color: white;
 }
 
 .our-service {
-  padding-bottom: 20px;
+  margin: 20px 10px 60px 0;
+  padding-bottom: 10px;
   display: block;
   list-style-type: none;
   width: 250px;
@@ -272,10 +280,193 @@ header {
 }
 
 .we-are-cool {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 40px;
   width: 270px;
   height: 60px;
   background-color: #10e08b;
   position: absolute;
   bottom: 0;
+  right: 100px;
   border: none;
+  color: white;
+  font-weight: 900;
+  font-size: 16px;
+}
+
+.arrow-down {
+  display: block;
+  width: 16px;
+  height: 31px;
+  background-image: url(../images/arrowDown.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.we-are-cool:focus {
+  outline-color: white;
+}
+
+.we-are-cool:hover {
+  box-shadow: 0 0 5px 3px white;
+}
+
+.only-whith-us-block {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+}
+
+.only-whith-us-left-block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(../images/video.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: auto;
+  min-width: 677px;
+  height: 100vh;
+}
+
+.play-button {
+  height: 120px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  background-color: transparent;
+  border: none;
+  color: white;
+}
+
+.play-button:focus {
+  outline: none;
+  opacity: 0.7;
+  cursor: pointer;
+}
+
+.play-button:hover {
+  text-decoration: underline;
+}
+
+.play-icon {
+  background-image: url(../images/videoPlayButton.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 76px;
+  height: 77px;
+}
+
+.button-sign {
+  color: white;
+  font-weight: 700;
+  font-size: 15px;
+}
+
+.positioning-space-between-colom {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
+}
+
+.block-title {
+  color: black;
+  text-align: left;
+  font-weight: 900;
+  font-size: 48px;
+  padding: 110px 0 50px;
+}
+
+.only-whith-us-content-block {
+  display: flex;
+  height: auto;
+  min-height: 400px;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.whith-us-text {
+  color: black;
+  text-align: left;
+  font-weight: 400;
+  font-size: 21px;
+  padding-bottom: 10px;
+}
+
+.places-of-working {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding-bottom: 70px;
+}
+
+.place-of-working {
+  width: 255px;
+  height: 195px;
+  background-color: #f2f2f2;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  margin: 5px;
+}
+
+.place-of-working-icon {
+  background-repeat: no-repeat;
+  background-position: center;
+  padding-top: 10px;
+}
+
+.world {
+  width: 75px;
+  height: 75px;
+  background-image: url(../images/world.png);
+}
+
+.spaceman {
+  width: 77px;
+  height: 82px;
+  background-image: url(../images/spaceman.png);
+}
+
+.place-of-working-text {
+  padding: 10px;
+  color: black;
+  text-align: center;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.how-it-was-block {
+  padding: 80px 0 155px;
+}
+
+.title-center {
+  text-align: center;
+  padding: 0;
+}
+
+.how-it-was-top-block {
+  padding: 80px 0 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.slogan {
+  color: #999999;
+  text-align: center;
+  font-weight: 200;
+  font-size: 32px;
+  width: auto;
+  max-width: 261px;
+}
+
+.slogan-green {
+  color: #10e08b;
 }
