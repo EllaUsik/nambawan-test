@@ -197,7 +197,7 @@
   position: relative;
 }
 
-.content-spase {
+.content-space {
   margin-left: 55px;
   margin-right: 95px;
 }
@@ -612,4 +612,128 @@ footer {
   font-size: 21px;
   text-transform: none;
   font-weight: 200;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 1320px) {
+
+  .only-whith-us-left-block {
+    width: auto;
+    min-width: 50%;
+  }
+
+  .only-whith-us-content-block {
+    width: 100%;
+    justify-content: space-around;
+  }
+
+  .block-title {
+    padding: 10px 0;
+    font-size: 35px;
+  }
+
+  .whith-us-text {
+    font-size: 18px;
+  }
+
+  .positioning-center {
+    width: auto;
+    min-width: 216px;
+  }
+
+  .how-it-was-top-block, .how-it-was-bottom-block {
+    justify-content: space-around;
+  }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 1030px) {
+
+  .about-us-title {
+    width: 100%;
+  }
+
+  .what-we-do {
+    flex-direction: column;
+  }
+
+  .how-it-was-top-block {
+    flex-direction: column-reverse;
+  }
+
+  .how-it-was-bottom-block {
+    flex-direction: column;
+  }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 900px) {
+
+  .content-space {
+    margin: 0 40px;
+  }
+
+  .about-us-title {
+    font-size: 45px;
+  }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 800px) {
+
+  .left-block {
+    display: none;
+  }
+
+  .content-space {
+    margin: 0 20px;
+  }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 615px) {
+
+  .about-us-block {
+    height: auto;
+  }
+
+  .about-us-title {
+    font-size: 30px;
+  }
+
+  .we-are-cool {
+    position: static;
+    margin: 10px auto 0;
+  }
+
+  .only-whith-us-block {
+    height: auto;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column-reverse;
+  }
+
+  .only-whith-us-left-block {
+    height: auto;
+    min-height: 350px;
+    width: 100%;
+  }
+
+  .only-whith-us-right-block {
+    height: auto;
+  }
+
+  .positioning-space-between-colom {
+    height: auto;
+  }
+
+  .gallery-block {
+    width: 100%;
+  }
+
+  .block-title {
+    font-size: 25px;
+  }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 430px) {
+
+  .about-us-title {
+    font-size: 25px;
+  }
 }
