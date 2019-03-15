@@ -10,6 +10,18 @@ const firstPagElement = document.getElementById('firstPag');
 const secondPagElement = document.getElementById('secondPag');
 const thirdPagElement = document.getElementById('thirdPag');
 
+const coolButtonElement = document.getElementById('coolButton');
+
+coolButtonElement.addEventListener('click', () => {
+  const withUsElement = document.getElementById('withUs');
+
+  window.scrollTo({
+    behavior: 'smooth',
+    left: 0,
+    top: withUsElement.offsetTop
+  });
+});
+
 window.addEventListener('scroll', (evt) => {
   const scrollPosition = document.scrollingElement.scrollTop;
 
